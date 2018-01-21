@@ -1,0 +1,38 @@
+<html>
+
+ <head> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <meta name=“viewport” content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <meta charset="utf-8">
+        <script src="https://use.fontawesome.com/23e3abc5b7.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <title>Date</title> 
+
+    </head>
+
+    <body>
+
+        <div id="clock" style="background-color: black; color: green; font-family: 'Press Start 2P', cursive;">
+
+        
+        </div> 
+
+        <script>
+        
+        var update = setInterval(function(){
+        
+            var narArVi = new Date();
+            var H = narArVi.getHours();
+            var M = narArVi.getMinutes();
+            var S = narArVi.getSeconds(); 
+
+            printClock = H + ":" + M + ":" + S
+        
+            document.getElementById("clock").innerHTML = printClock;
+        }, 1000);
+
+        </script>
+    </body>
+
+</html>
